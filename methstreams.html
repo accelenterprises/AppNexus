@@ -1,1 +1,24 @@
-<a href="https://github.com/accelenterprises/AppNexus/raw/main/MethStreams.apk" download>Download MethStreams.apk</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Download</title>
+    <script type="text/javascript">
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = 'https://github.com/accelenterprises/AppNexus/raw/main/MethStreams.apk';
+            link.download = 'MethStreams.apk';
+            link.style.display = 'none';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        window.onload = downloadFile;
+    </script>
+</head>
+<body>
+    <p>If the download does not start automatically, <a href="https://github.com/accelenterprises/AppNexus/raw/main/MethStreams.apk">click here to download</a>.</p>
+</body>
+</html>
